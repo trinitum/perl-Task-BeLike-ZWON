@@ -88,7 +88,6 @@ requires 'File::Path::Expand' => '1.02';
 requires 'File::Slurp' => '9999.13';
 requires 'GD' => '2.44';
 requires 'GD::Graph' => '1.44';
-requires 'Geo::IP' => '1.38';
 requires 'Getopt::Long' => '2.38';
 requires 'HTML::Parser' => '3.65';
 requires 'HTML::TableExtract' => '2.10';
@@ -187,7 +186,7 @@ requires 'XML::Simple' => '2.18';
 requires 'XML::Twig' => '3.34';
 requires 'YAML' => '0.71';
 requires 'YAML::Tiny' => '1.41';
-requires 'YAML::LibYAML' => '0.18';
+requires 'YAML::XS' => '0.33';
 
 auto_install;
 WriteAll;

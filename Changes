@@ -1,5 +1,8 @@
 Revision history for Task-BeLike-ZWON
 
+0.03    Sat May  1 2010 Pavel Shaydo <zwon@cpan.org>
+    * YAML::LibYAML was renamed to YAML::XS
+
 0.02    Fri Apr 30 2010 Pavel Shaydo <zwon@cpan.org>
     * Updated versions.
     * Added PSGI modules.
