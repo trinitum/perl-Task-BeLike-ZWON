@@ -1,6 +1,7 @@
 ---
 abstract: 'Requires the modules ZWON likes'
 author:
+  - 'Pavel Shaydo, C<< <zwon at cpan.org> >>'
   - 'Pavel Shaydo <zwon@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
@@ -8,7 +9,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.93'
+generated_by: 'Module::Install version 0.97'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,57 +21,56 @@ no_index:
     - t
 requires:
   Algorithm::Diff: 1.1902
-  AnyEvent: 5.24
+  AnyEvent: 5.261
   AnyEvent::HTTP: 1.44
-  AnyEvent::MP: 1.26
-  Apache::Test: 1.30
+  AnyEvent::MP: 1.29
   App::Ack: 1.92
   App::GitHub: 0.09
   App::Pod2CpanHtml: 0.02
   AppConfig: 1.66
   Archive::Any: 0.0932
-  Archive::Tar: 1.58
-  Archive::Zip: 1.30
   Astro::MoonPhase: 0.60
-  Attribute::Handlers: 0.87
-  BerkeleyDB: 0.41
+  Attribute::Handlers: 0.88
+  BerkeleyDB: 0.42
   CAM::PDF: 1.52
   CGI: 3.49
   CGI::Application: 4.31
+  CGI::Application::PSGI: 1.00
   CGI::Application::Plugin::TT: 1.04
   CGI::Carp: 3.45
+  CGI::Emulate::PSGI: 0.09
+  CGI::PSGI: 0.11
   CGI::Session: 4.42
   CGI::Simple: 1.112
-  CPAN::Mini: 0.576
-  CPANPLUS: 0.9001
+  CPAN::Mini: 1.100630
   Cairo: 1.061
   Carp::Always: 0.09
   Carp::Clan: 6.04
-  Catalyst::Action::REST: 0.83
-  Catalyst::Controller::HTML::FormFu: 0.06001
-  Catalyst::Devel: 1.26
+  Catalyst::Action::REST: 0.84
+  Catalyst::Devel: 1.27
+  Catalyst::Engine::PSGI: 0.09
   Catalyst::Plugin::Authentication: 0.10016
-  Catalyst::Runtime: 5.80020
-  Catalyst::View::TT: 0.32
-  Class::MOP: 0.98
-  Config::General: 2.44
+  Catalyst::Runtime: 5.80023
+  Catalyst::View::TT: 0.34
+  Chart::Clicker: 2.64
+  Class::MOP: 1.01
+  Config::General: 2.48
   Crypt::CBC: 2.30
   Crypt::GCrypt: 1.24
   Crypt::RC4: 2.02
   Crypt::SSLeay: 0.57
-  Curses: 1.28
-  DBD::Pg: 2.16.1
+  DBD::Pg: 2.17.1
   DBD::SQLite: 1.29
-  DBI: 1.609
-  DBIx::Class: 0.08119
+  DBI: 1.611
+  DBIx::Class: 0.08121
   Date::Calc: 6.3
-  Date::Manip: 6.06
-  DateTime: 0.53
+  Date::Manip: 6.11
+  DateTime: 0.55
   DateTime::Format::Mail: 0.3001
-  DateTime::TimeZone: 1.10
-  Devel::Cover: 0.65
-  Devel::Declare: 0.005011
-  Devel::NYTProf: 3.01
+  DateTime::TimeZone: 1.19
+  Devel::Cover: 0.67
+  Devel::Declare: 0.006000
+  Devel::NYTProf: 3.11
   Devel::Peek: 0.96
   Devel::Size: 0.71
   Devel::StackTrace: 1.22
@@ -85,108 +85,108 @@ requires:
   Email::Valid: 0.182
   Error: 0.17016
   Event: 1.13
-  Exception::Class: 1.29
-  ExtUtils::CBuilder: 0.2701
+  Exception::Class: 1.30
+  ExtUtils::CBuilder: 0.2703
   ExtUtils::MakeMaker: 6.56
-  ExtUtils::ParseXS: 2.2203
-  File::ChangeNotify: 0.12
+  ExtUtils::ParseXS: 2.2205
+  File::ChangeNotify: 0.13
   File::Find::Rule: 0.32
   File::Find::Rule::Perl: 1.09
   File::HomeDir: 0.89
   File::Path::Expand: 1.02
   File::Slurp: 9999.13
-  GD: 2.44
+  GD: 2.45
   GD::Graph: 1.44
-  Geo::IP: 1.38
   Getopt::Long: 2.38
-  HTML::Parser: 3.64
+  HTML::Parser: 3.65
   HTML::TableExtract: 2.10
   HTML::Template: 2.9
-  HTTP::Server::Simple: 0.42
+  HTTP::Server::Simple: 0.43
   IO::Capture: 0.05
   IO::String: 1.08
   IO::Stringy: 2.110
   IO::Tty: 1.08
-  Image::ExifTool: 8.10
+  IP::World: 0.35
+  Image::ExifTool: 8.15
   Image::Resize: 0.5
-  JSON: 2.17
+  JSON: 2.21
   JSON::Any: 1.22
-  JSON::XS: 2.27
-  LWP: 5.834
+  JSON::XS: 2.29
+  LWP: 5.835
   List::MoreUtils: 0.22
-  List::Util: 1.22
+  List::Util: 1.23
   Log::Any: 0.11
-  Log::Log4perl: 1.27
+  Log::Log4perl: 1.28
   MIME::Base64: 3.09
   MIME::Lite: 3.027
-  MIME::Types: 1.28
+  MIME::Types: 1.29
   Math::Random: 0.71
-  Math::Random::MT::Auto: 6.14
-  Module::Build: 0.3603
-  Module::CoreList: 2.25
-  Module::Find: 0.08
+  Math::Random::MT::Auto: 6.15
+  Module::Build: 0.3607
   Module::Install::AuthorRequires: 0.02
   Module::Install::GithubMeta: 0.10
-  Module::Load: 0.16
+  Module::Load: 0.18
   Module::Pluggable: 3.9
   Module::Starter: 1.54
-  Moose: 0.98
+  Moose: 1.03
   MooseX::Declare: 0.33
-  MooseX::MethodAttributes: 0.20
+  MooseX::MethodAttributes: 0.21
   MooseX::Types: 0.21
-  Mouse: 0.50
+  Mouse: 0.58
   Net::DNS: 0.66
-  Net::GitHub: 0.20
   Net::IP: 1.25
+  Net::OpenSSH: 0.47
   Net::SSLeay: 1.36
-  POE: 1.287
+  POE: 1.289
   POE::API::Peek: 2.15
   POE::Component::Client::HTTP: 0.895
-  POE::Component::Client::Whois: 1.28
   POE::Component::Daemon: 0.1100
-  POE::Component::Github: 0.06
   POE::Component::Pluggable: 1.24
-  POE::Component::SSLify: 0.15
+  POE::Component::SSLify: 0.20
   POE::Component::Server::SimpleHTTP: 2.0
-  Parse::RecDescent: 1.964
+  PSGI: 1.03
+  Parse::RecDescent: 1.965001
   Path::Class: 0.18
   Perl6::Junction: 1.40000
-  Perl::Critic: 1.105
+  Perl::Critic: 1.106
   Perl::Critic::Deprecated: 1.094
   Perl::Tidy: 20090616
   Pod::Coverage: 0.20
-  Pod::Simple: 3.13
+  Pod::Simple: 3.14
   Pod::Usage: 1.36
   Regexp::Common: 2010010201
-  Rose::DB::Object: 0.786
-  SQL::Translator: 0.11004
+  Rose::DB::Object: 0.787
+  SQL::Translator: 0.11005
   Scalar::MoreUtils: 0.02
+  Simulation::DiscreteEvent: 0.07
   Socket6: 0.23
-  Socket::GetAddrInfo: 0.15
-  Software::License: 0.012
+  Software::License: 0.016
   Sort::Versions: 1.5
+  Starman: 0.2004
   Statistics::Basic: 1.6601
   Statistics::Descriptive: 3.0100
   Syntax::Highlight::Engine::Kate: 0.06
   Template: 2.22
   Term::ReadKey: 2.30
-  Term::ReadLine::Gnu: 1.19
+  Term::ReadLine::Gnu: 1.20
   Term::ReadLine::Perl: 1.0303
-  Test::Class: 0.33
+  Test::Class: 0.35
   Test::LeakTrace: 0.10
+  Test::More: 0.63
   Test::Most: 0.21
-  Test::POE::Client::TCP: 1.06
-  Test::POE::Server::TCP: 1.08
-  Test::Pod: 1.41
+  Test::POE::Client::TCP: 1.08
+  Test::POE::Server::TCP: 1.10
+  Test::Pod: 1.44
   Test::Pod::Coverage: 1.08
-  Test::WWW::Mechanize: 1.24
-  Test::WWW::Mechanize::Catalyst: 0.51
+  Test::WWW::Mechanize: 1.28
+  Test::WWW::Mechanize::Catalyst: 0.52
+  Test::WWW::Mechanize::PSGI: 0.35
   Text::Flow: 0.01
   Tie::Array::Sorted: 1.41
-  URI: 1.52
-  URI::Find: 20100211
-  WWW::Mechanize: 1.60
-  WWW::Mechanize::Firefox: 0.15
+  URI: 1.54
+  URI::Find: 20100505
+  WWW::Mechanize: 1.62
+  WWW::Mechanize::Firefox: 0.17
   XML::LibXML: 1.70
   XML::Parser: 2.36
   XML::SAX: 0.96
@@ -194,13 +194,13 @@ requires:
   XML::Simple: 2.18
   XML::Twig: 3.34
   YAML: 0.71
-  YAML::LibYAML: 0.18
   YAML::Tiny: 1.41
+  YAML::XS: 0.33
   aliased: 0.30
-  autodie: 2.08
+  autodie: 2.10
   base: 2.14
-  namespace::autoclean: 0.09
-  namespace::clean: 0.13
+  namespace::autoclean: 0.11
+  namespace::clean: 0.14
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.04

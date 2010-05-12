@@ -1,5 +1,9 @@
 Revision history for Task-BeLike-ZWON
 
+0.04    Wed May 12 2010 Pavel Shaydo <zwon@cpan.org>
+    * Added Net::OpenSSH
+    * Updated versions
+
 0.03    Sat May  1 2010 Pavel Shaydo <zwon@cpan.org>
     * YAML::LibYAML was renamed to YAML::XS
 
