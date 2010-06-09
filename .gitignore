@@ -13,3 +13,4 @@ Task-BeLike-ZWON-*
 *.bak
 nytprof.out
 inc/.author
+*.swp
