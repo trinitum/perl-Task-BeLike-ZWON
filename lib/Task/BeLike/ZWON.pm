@@ -2,7 +2,7 @@ package Task::BeLike::ZWON;
 
 use warnings;
 use strict;
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 =head1 NAME
 
