@@ -46,6 +46,7 @@ my @MAIN = (
     'CGI',
     'CGI::Carp',
     'CGI::Session',
+    'Data::Printer',
     'DateTime',
     'DateTime::Format::Mail',
     'DateTime::TimeZone',
