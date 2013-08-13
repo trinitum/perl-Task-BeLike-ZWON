@@ -125,6 +125,7 @@ my @MAIN = (
 my @OPTIONAL = (
     'AnyEvent',
     'AnyEvent::HTTP',
+    'AnyEvent::Pg',
     'App::Ack',
     'App::Pod2CpanHtml',
     'Astro::MoonPhase',
